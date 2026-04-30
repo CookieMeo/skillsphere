@@ -158,11 +158,14 @@ h2 {
 
 .nav-list {
     display: flex;
+    align-items: center; /* Выравнивает все LI по вертикали */
 }
 
 .nav-list li {
     position: relative;
     margin-left: 30px;
+    display: flex;
+    align-items: center; /* Центрируем содержимое внутри LI */
 }
 
 .nav-list a {
@@ -170,6 +173,10 @@ h2 {
     font-weight: 500;
     padding: 5px 0;
     transition: color var(--transition-speed) ease;
+    
+    display: flex;
+    align-items: center; /* Это выровняет текст "О нас" и стрелочку */
+    line-height: 1;      /* Убираем лишние отступы строк */
 }
 
 .nav-list a.active,
@@ -178,10 +185,13 @@ h2 {
 }
 
 /* Выпадающее меню */
-.dropdown-toggle {
-    display: flex;
-    align-items: center;
+.dropdown-toggle i {
+    margin-left: 5px;
+    font-size: 0.8em;
+    display: inline-block;
+    vertical-align: middle; /* Дополнительная страховка */
 }
+
 .dropdown-toggle i {
     margin-left: 5px;
     font-size: 0.8em;
