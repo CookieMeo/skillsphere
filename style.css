@@ -415,7 +415,6 @@ h2 {
     color: var(--white-color);
     padding: 80px 0;
     text-align: center;
-    background-image: url('https://i.imgur.com/G9CjH9l.png'); /* Изображение для фона, если нужно */
     background-size: cover;
     background-position: center;
     position: relative;
