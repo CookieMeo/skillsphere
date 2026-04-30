@@ -725,6 +725,157 @@ h2 {
     font-size: 1.1rem;
 }
 
+/* Профиль - Сетка */
+.profile-layout {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 30px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+/* Боковая панель */
+.profile-sidebar {
+    background: var(--white-color);
+    padding: 30px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    height: fit-content;
+}
+
+.profile-user-info {
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+}
+
+.profile-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+    border: 3px solid var(--primary-color);
+}
+
+.profile-nav a {
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    color: var(--text-color);
+    margin-bottom: 5px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.profile-nav a i {
+    margin-right: 15px;
+    width: 20px;
+    text-align: center;
+}
+
+.profile-nav a:hover, .profile-nav a.active {
+    background: #fff0eb;
+    color: var(--primary-color);
+}
+
+/* Контентная часть */
+.profile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.profile-card {
+    background: var(--white-color);
+    padding: 25px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+}
+
+.profile-grid-top {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+.profile-grid-bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* Прогресс-бары */
+.progress-item {
+    margin-bottom: 15px;
+}
+
+.progress-bar {
+    background: #eee;
+    height: 10px;
+    border-radius: 5px;
+    margin: 8px 0;
+    overflow: hidden;
+}
+
+.progress-fill {
+    background: var(--primary-color);
+    height: 100%;
+}
+
+/* Круг с цифрой */
+.score-circle-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.score-circle {
+    width: 150px;
+    height: 150px;
+    border: 10px solid var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.score-value {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+
+.score-label {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+}
+
+.stats-list {
+    padding: 0;
+}
+
+.stats-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #f9f9f9;
+}
+
+/* Адаптивность для профиля */
+@media (max-width: 992px) {
+    .profile-layout {
+        grid-template-columns: 1fr;
+    }
+    .profile-grid-top, .profile-grid-bottom {
+        grid-template-columns: 1fr;
+    }
+}
+
 
 /* Адаптивность */
 @media (max-width: 992px) {
