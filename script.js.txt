@@ -1,0 +1,50 @@
+document.addEventListener('DOMContentLoaded', () => {
+    // FAQ Аккордеон
+    const accordionHeaders = document.querySelectorAll('.accordion-header');
+
+    accordionHeaders.forEach(header => {
+        header.addEventListener('click', () => {
+            const accordionContent = header.nextElementSibling;
+            const isActive = header.classList.contains('active');
+
+            // Закрыть все остальные открытые аккордеоны
+            accordionHeaders.forEach(otherHeader => {
+                if (otherHeader !== header && otherHeader.classList.contains('active')) {
+                    otherHeader.classList.remove('active');
+                    otherHeader.nextElementSibling.classList.remove('active');
+                }
+            });
+
+            // Открыть/закрыть текущий аккордеон
+            if (!isActive) {
+                header.classList.add('active');
+                accordionContent.classList.add('active');
+            } else {
+                header.classList.remove('active');
+                accordionContent.classList.remove('active');
+            }
+        });
+    });
+
+    // Обработка отправки формы обратной связи (простая, без бэкенда)
+    const contactForm = document.querySelector('.contact-form');
+    if (contactForm) {
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault(); // Предотвратить стандартную отправку формы
+            alert('Сообщение успешно отправлено! Мы свяжемся с вами в ближайшее время.');
+            contactForm.reset(); // Очистить форму
+        });
+    }
+
+    // Обработка выпадающего меню для мобильных (если нужно кликать, а не только наводить)
+    const dropdownToggle = document.querySelector('.dropdown-toggle');
+    if (dropdownToggle) {
+        dropdownToggle.addEventListener('click', function(e) {
+            if (window.innerWidth <= 992) { // Только для мобильных (пример)
+                e.preventDefault();
+                this.parentElement.classList.toggle('active'); // Переключаем класс 'active' на родительском элементе <li>
+            }
+        });
+    }
+
+});

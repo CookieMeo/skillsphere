@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillSphere - Развивай Свой Потенциал</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="https://i.imgur.com/G9CjH9l.png" alt="SkillSphere Logo"> <!-- Placeholder image for logo -->
+                <span>SkillSphere</span>
+            </a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="courses.html">Курсы</a></li>
+                    <li><a href="team.html">Команда</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">О нас <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Миссия</a></li>
+                            <li><a href="#">Ценности</a></li>
+                            <li><a href="#">История</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Блог</a></li>
+                    <li><a href="contact.html">Связаться</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="#" class="btn-icon"><i class="fas fa-search"></i></a>
+                <a href="#" class="btn-icon"><i class="fas fa-user-circle"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-logo-animation" id="hero-logo">
+                        <img src="https://i.imgur.com/G9CjH9l.png" alt="SkillSphere animated logo"> <!-- Placeholder image for central graphic -->
+                    </div>
+                    <h1>SkillSphere</h1>
+                    <p class="subtitle">Unleash Your Potential</p>
+                </div>
+            </div>
+        </section>
+	<section class="courses-section section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Курсы</h2>
+                    <div class="carousel-nav">
+                        <button class="arrow-btn"><i class="fas fa-chevron-left"></i></button>
+                        <button class="arrow-btn"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+                <div class="course-grid">
+                    <div class="course-card">
+                        <div class="card-icon"><i class="fas fa-book-open"></i></div>
+                        <h3>Книга (Обучение)</h3>
+                    </div>
+                    <div class="course-card">
+                        <div class="card-icon"><i class="fas fa-chart-line"></i></div>
+                        <h3>Лестница Роста (Карьерный рост)</h3>
+                    </div>
+                    <div class="course-card">
+                        <div class="card-icon"><i class="fas fa-lightbulb"></i></div>
+                        <h3>Сфера Знаний (Развитие)</h3>
+                    </div>
+                    <div class="course-card">
+                        <div class="card-icon"><i class="fas fa-laptop-code"></i></div>
+                        <h3>Микросхема (Технологии)</h3>
+                    </div>
+                     <div class="course-card">
+                        <div class="card-icon"><i class="fas fa-globe"></i></div>
+                        <h3>Дипломы (Сертификация)</h3>
+                    </div>
+                    <div class="course-card">
+                        <div class="card-icon"><i class="fas fa-cogs"></i></div>
+                        <h3>Мозг со стрелками (Креативность)</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="teachers-section section-padding bg-light-gray">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Преподаватели</h2>
+                    <div class="carousel-nav">
+                        <button class="arrow-btn"><i class="fas fa-chevron-left"></i></button>
+			<button class="arrow-btn"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+                <div class="teacher-grid">
+                    <div class="teacher-card">
+                        <img src="https://i.imgur.com/8Q9lQ4Z.png" alt="Учитель Катя Иванова"> <!-- Placeholder image -->
+                        <h3>Катя Иванова</h3>
+                        <p>CEO & Founder</p>
+                    </div>
+                    <div class="teacher-card">
+                        <img src="https://i.imgur.com/8Q9lQ4Z.png" alt="Учитель Павел Смирнов"> <!-- Placeholder image -->
+                        <h3>Павел Смирнов</h3>
+                        <p>UI/UX Designer</p>
+                    </div>
+                    <div class="teacher-card">
+                        <img src="https://i.imgur.com/8Q9lQ4Z.png" alt="Учитель Мария Петрова"> <!-- Placeholder image -->
+                        <h3>Мария Петрова</h3>
+                        <p>Frontend Developer</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio-section section-padding">
+            <div class="container">
+                <h2>Портфолио студента</h2>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item"><img src="https://i.imgur.com/G9CjH9l.png" alt="Portfolio Image 1"></div>
+                    <div class="portfolio-item"><img src="https://i.imgur.com/G9CjH9l.png" alt="Portfolio Image 2"></div>
+                    <div class="portfolio-item"><img src="https://i.imgur.com/G9CjH9l.png" alt="Portfolio Image 3"></div>
+                    <div class="portfolio-item"><img src="https://i.imgur.com/G9CjH9l.png" alt="Portfolio Image 4"></div>
+                    <div class="portfolio-item"><img src="https://i.imgur.com/G9CjH9l.png" alt="Portfolio Image 5"></div>
+                    <div class="portfolio-item"><img src="https://i.imgur.com/G9CjH9l.png" alt="Portfolio Image 6"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section bg-dark text-center">
+            <div class="container">
+                <h3>Как не двигаться вперед? ;)микро?</h3>
+                <button class="btn btn-primary">Начать сейчас</button>
+            </div>
+        </section>
+
+        <section class="faq-section section-padding">
+            <div class="container">
+                <h2>FAQ</h2>
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <button class="accordion-header">Что такое SkillSphere?</button>
+                        <div class="accordion-content">
+                            <p>SkillSphere — это онлайн-платформа для обучения, которая предлагает широкий спектр курсов для развития профессиональных и личных навыков.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header">Как записаться на курс?</button>
+                        <div class="accordion-content">
+                            <p>Вы можете выбрать интересующий вас курс на странице "Курсы", нажать на него и следовать инструкциям для регистрации и оплаты.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header">Есть ли сертификаты по окончании курсов?</button>
+                        <div class="accordion-content">
+                            <p>Да, по завершении большинства курсов вы получите официальный сертификат от SkillSphere, подтверждающий ваши новые знания и навыки.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <a href="index.html" class="logo">
+                    <img src="https://i.imgur.com/G9CjH9l.png" alt="SkillSphere Logo"> <!-- Placeholder image for logo -->
+                    <span>SkillSphere</span>
+                </a>
+                <nav class="footer-nav">
+                    <ul>
+                        <li><a href="courses.html">Курсы</a></li>
+                        <li><a href="team.html">Команда</a></li>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Блог</a></li>
+                        <li><a href="contact.html">Связаться</a></li>
+                    </ul>
+                </nav>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 SkillSphere. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
